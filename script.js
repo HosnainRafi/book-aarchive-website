@@ -9,7 +9,7 @@ const bookList = () => {
         const searchResult = document.getElementById('search-result');
         searchResult.textContent = '';
     }
-    //user when search anything
+    //when search anything
     else{
     const url = `https://openlibrary.org/search.json?q=${searchText}`;
      fetch(url)
@@ -29,6 +29,7 @@ const displayResult = books => {
     const searchResult = document.getElementById('search-result');
     const section = document.getElementById('section');
     searchResult.textContent = '';
+    //Book count Area
     const h1 = document.createElement('h1');
     h1.classList.add('book-count');
     section.textContent = '';
